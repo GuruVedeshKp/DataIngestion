@@ -1,0 +1,31 @@
+CustomerID,CompanyName,ContactName,ContactTitle,City,Region,PostalCode,Country,Segment,MetroArea,_source_file
+BOTTM,Bottom-Dollar Markets,Elizabeth Lincoln,Accounting Manager,Tsawassen,BC,T2F 8M4,Canada,Healthcare,True,.\CustomersData.csv
+COMMI,Comercio Mineiro,Pedro Afonso,Sales Associate,Sao Paulo,SP,05432-043,Brazil,Government,True,.\CustomersData.csv
+FAMIA,Familia Arquibaldo,Aria Cruz,Marketing Assistant,Sao Paulo,SP,05442-030,Brazil,Corporate,False,.\CustomersData.csv
+GOURL,Gourmet Lanchonetes,Andre Fonseca,Sales Associate,Campinas,SP,04876-786,Brazil,Hospitality,True,.\CustomersData.csv
+GREAL,Great Lakes Food Market,Howard Snyder,Marketing Manager,Eugene,OR,97403,USA,Healthcare,False,.\CustomersData.csv
+GROSR,GROSELLA-Restaurante,Manuel Pereira,Owner,Caracas,DF,1081,Venezuela,Retail,True,.\CustomersData.csv
+HANAR,Hanari Carnes,Mario Pontes,Accounting Manager,Rio de Janeiro,RJ,05454-876,Brazil,Corporate,True,.\CustomersData.csv
+HILAA,HILARION-Abastos,Carlos Hernandez,Sales Representative,San Cristobal,Táchira,5022,Venezuela,Healthcare,False,.\CustomersData.csv
+HUNGC,Hungry Coyote Import Store,Yoshi Latimer,Sales Representative,Elgin,OR,97827,USA,Government,True,.\CustomersData.csv
+ISLAT,Island Trading,Helen Bennett,Marketing Manager,Cowes,Isle of Wight,PO31 7PJ,UK,Government,True,.\CustomersData.csv
+LAUGB,Laughing Bacchus Wine Cellars,Yoshi Tannamuri,Marketing Assistant,Vancouver,BC,V3F 2K1,Canada,Educational,False,.\CustomersData.csv
+LAZYK,Lazy K Kountry Store,John Steel,Marketing Manager,Walla Walla,WA,99362,USA,Retail,False,.\CustomersData.csv
+LETSS,Let''''s Stop N Shop,Jaime Yorres,Owner,San Francisco,CA,94117,USA,Retail,False,.\CustomersData.csv
+LILAS,LILA-Supermercado,Carlos Gonzalez,Accounting Manager,Barquisimeto,Lara,3508,Venezuela,Hospitality,True,.\CustomersData.csv
+LINOD,LINO-Delicateses,Felipe Izquierdo,Owner,I. de Margarita,Nueva Esparta,4980,Venezuela,Government,False,.\CustomersData.csv
+LONEP,Lonesome Pine Restaurant,Fran Wilson,Sales Manager,Portland,OR,97219,USA,Educational,False,.\CustomersData.csv
+MEREP,Mere Paillarde,Jean Fresniere,Marketing Assistant,Montreal,Québec,H1J 1C3,Canada,Corporate,False,.\CustomersData.csv
+OLDWO,Old World Delicatessen,Rene Phillips,Sales Representative,Anchorage,AK,99508,USA,Government,True,.\CustomersData.csv
+QUEDE,Que Delícia,Bernardo Batista,Accounting Manager,Rio de Janeiro,RJ,02389-673,Brazil,Corporate,False,.\CustomersData.csv
+QUEEN,Queen Cozinha,Lucia Carvalho,Marketing Assistant,Sao Paulo,SP,05487-020,Brazil,Travel,True,.\CustomersData.csv
+RATTC,Rattlesnake Canyon Grocery,Paula Wilson,Assistant Sales Representative,Albuquerque,NM,87110,USA,Retail,True,.\CustomersData.csv
+RICAR,Ricardo Adocicados,Janete Limeira,Assistant Sales Agent,Rio de Janeiro,RJ,02389-890,Brazil,Corporate,False,.\CustomersData.csv
+SAVEA,Save-a-lot Markets,Jose Pavarotti,Sales Representative,Boise,ID,83720,USA,Retail,False,.\CustomersData.csv
+SPLIR,Split Rail Beer \& Ale,Art Braunschweiger,Sales Manager,Lander,WY,82520,USA,Hospitality,False,.\CustomersData.csv
+THEBI,The Big Cheese,Liz Nixon,Marketing Manager,Portland,OR,97201,USA,Educational,True,.\CustomersData.csv
+THECR,The Cracker Box,Liu Wong,Marketing Assistant,Butte,MT,59801,USA,Hospitality,False,.\CustomersData.csv
+TRADH,Tradicao Hipermercados,Anabela Domingues,Sales Representative,Sao Paulo,SP,05634-030,Brazil,Corporate,True,.\CustomersData.csv
+TRAIH,Trail''''s Head Gourmet Provisioners,Helvetius Nagy,Sales Associate,Kirkland,WA,98034,USA,Corporate,False,.\CustomersData.csv
+WELLI,Wellington Importadora,Paula Parente,Sales Manager,Resende,SP,08737-363,Brazil,Healthcare,False,.\CustomersData.csv
+WHITC,White Clover Markets,Karl Jablonski,Owner,Seattle,WA,98128,USA,Retail,False,.\CustomersData.csv

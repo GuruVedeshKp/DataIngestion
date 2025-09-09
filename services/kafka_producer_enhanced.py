@@ -3,7 +3,7 @@ Enhanced Kafka producer that can read data from multiple file formats
 and send to Kafka with proper error handling and monitoring.
 """
 
-from kafka import KafkaProducer
+from confluent_kafka import Producer
 import json
 import logging
 from typing import List, Dict, Any, Optional
@@ -42,16 +42,20 @@ class EnhancedKafkaProducer:
         # Initialize file processor
         self.file_processor = FileProcessor()
         
+        # Configure producer settings for confluent-kafka
+        producer_config = {
+            'bootstrap.servers': ','.join(self.bootstrap_servers),
+            'batch.size': batch_size,
+            'linger.ms': linger_ms,
+            'message.max.bytes': max_request_size,
+            'compression.type': 'snappy',  # Better compression
+            'acks': 'all',  # Wait for all replicas
+            'retries': 3,
+            'retry.backoff.ms': 100
+        }
+        
         # Initialize Kafka producer
-        self.producer = KafkaProducer(
-            bootstrap_servers=self.bootstrap_servers,
-            batch_size=batch_size,
-            linger_ms=linger_ms,
-            buffer_memory=buffer_memory,
-            max_request_size=max_request_size,
-            value_serializer=lambda v: json.dumps(v, default=self._json_serializer).encode("utf-8"),
-            key_serializer=lambda k: k.encode("utf-8") if k else None
-        )
+        self.producer = Producer(producer_config)
         
         # Statistics
         self.sent_count = 0
@@ -161,24 +165,40 @@ class EnhancedKafkaProducer:
                 if key_field and key_field in record:
                     key = str(record[key_field])
                 
-                # Send message
-                future = self.producer.send(topic, value=record, key=key)
+                # Serialize the value to JSON
+                value = json.dumps(record, default=self._json_serializer)
                 
-                # Add callback for monitoring
-                future.add_callback(self._on_send_success)
-                future.add_errback(self._on_send_error)
+                # Send message using confluent-kafka
+                self.producer.produce(
+                    topic=topic, 
+                    value=value,
+                    key=key,
+                    callback=self._delivery_callback
+                )
+                
+                # Poll for delivery reports
+                self.producer.poll(0)
                 
             except Exception as e:
                 logger.error(f"Error sending record: {str(e)}")
                 self.error_count += 1
     
+    def _delivery_callback(self, err, msg):
+        """Delivery callback for confluent-kafka"""
+        if err:
+            logger.error(f"Failed to deliver message: {err}")
+            self.error_count += 1
+        else:
+            self.sent_count += 1
+            logger.debug(f"Message delivered to {msg.topic()}:{msg.partition()}:{msg.offset()}")
+    
     def _on_send_success(self, record_metadata):
-        """Callback for successful sends"""
+        """Callback for successful sends (legacy method for compatibility)"""
         self.sent_count += 1
-        logger.debug(f"Message sent successfully to {record_metadata.topic}:{record_metadata.partition}:{record_metadata.offset}")
+        logger.debug(f"Message sent successfully")
     
     def _on_send_error(self, exception):
-        """Callback for send errors"""
+        """Callback for send errors (legacy method for compatibility)"""
         self.error_count += 1
         logger.error(f"Failed to send message: {str(exception)}")
     
@@ -243,10 +263,20 @@ class EnhancedKafkaProducer:
             bool: True if sent successfully, False otherwise
         """
         try:
-            future = self.producer.send(topic, value=record, key=key)
-            record_metadata = future.get(timeout=10)  # Wait up to 10 seconds
+            # Serialize the value to JSON
+            value = json.dumps(record, default=self._json_serializer)
             
-            logger.debug(f"Record sent to {record_metadata.topic}:{record_metadata.partition}:{record_metadata.offset}")
+            # Send message using confluent-kafka
+            self.producer.produce(
+                topic=topic, 
+                value=value,
+                key=key
+            )
+            
+            # Flush to ensure delivery
+            self.producer.flush(timeout=10)
+            
+            logger.debug(f"Record sent to topic {topic}")
             return True
             
         except Exception as e:
@@ -258,8 +288,8 @@ class EnhancedKafkaProducer:
         logger.info("Closing Kafka producer...")
         
         try:
-            self.producer.flush()
-            self.producer.close()
+            # Flush any remaining messages
+            self.producer.flush(timeout=30)
             logger.info("Kafka producer closed successfully")
         except Exception as e:
             logger.error(f"Error closing producer: {str(e)}")

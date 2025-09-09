@@ -3,7 +3,7 @@ Enhanced Kafka consumer with data validation, quality assessment, and reporting.
 Integrates with Pydantic models and data validation services.
 """
 
-from kafka import KafkaConsumer
+from confluent_kafka import Consumer, KafkaException, KafkaError
 import json
 import pandas as pd
 import logging
@@ -51,17 +51,20 @@ class EnhancedKafkaConsumer:
         self.validator = DataValidator()
         self.file_processor = FileProcessor()
         
+        # Configure consumer settings for confluent-kafka
+        consumer_config = {
+            'bootstrap.servers': ','.join(self.bootstrap_servers),
+            'group.id': consumer_group,
+            'auto.offset.reset': auto_offset_reset,
+            'enable.auto.commit': enable_auto_commit,
+            'max.poll.interval.ms': 300000,
+            'session.timeout.ms': 10000,
+            'heartbeat.interval.ms': 3000
+        }
+        
         # Initialize Kafka consumer
-        self.consumer = KafkaConsumer(
-            topic,
-            bootstrap_servers=self.bootstrap_servers,
-            group_id=consumer_group,
-            auto_offset_reset=auto_offset_reset,
-            enable_auto_commit=enable_auto_commit,
-            max_poll_records=max_poll_records,
-            value_deserializer=lambda m: json.loads(m.decode("utf-8")),
-            consumer_timeout_ms=1000  # Timeout for polling
-        )
+        self.consumer = Consumer(consumer_config)
+        self.consumer.subscribe([topic])
         
         # Processing state
         self.processed_records = []
@@ -99,30 +102,45 @@ class EnhancedKafkaConsumer:
         try:
             start_time = time.time()
             
-            for message in self.consumer:
-                if not self.is_running:
-                    logger.info("Consumer stopped by user")
-                    break
+            while self.is_running:
+                # Poll for messages
+                msg = self.consumer.poll(timeout=1.0)
+                
+                if msg is None:
+                    continue
+                    
+                if msg.error():
+                    if msg.error().code() == KafkaError._PARTITION_EOF:
+                        logger.info('End of partition reached')
+                        continue
+                    else:
+                        logger.error(f'Consumer error: {msg.error()}')
+                        break
                 
                 # Check timeout
                 if timeout_seconds and (time.time() - start_time) > timeout_seconds:
                     logger.info(f"Timeout reached ({timeout_seconds}s)")
                     break
                 
-                # Process message
-                record = message.value
-                batch_buffer.append(record)
-                processed_count += 1
-                
-                # Process batch when buffer is full
-                if len(batch_buffer) >= self.batch_size:
-                    self._process_batch(batch_buffer)
-                    batch_buffer = []
-                
-                # Check max records limit
-                if max_records and processed_count >= max_records:
-                    logger.info(f"Max records limit reached ({max_records})")
-                    break
+                # Deserialize message
+                try:
+                    record = json.loads(msg.value().decode('utf-8'))
+                    batch_buffer.append(record)
+                    processed_count += 1
+                    
+                    # Process batch when buffer is full
+                    if len(batch_buffer) >= self.batch_size:
+                        self._process_batch(batch_buffer)
+                        batch_buffer = []
+                    
+                    # Check max records limit
+                    if max_records and processed_count >= max_records:
+                        logger.info(f"Max records limit reached ({max_records})")
+                        break
+                        
+                except json.JSONDecodeError as e:
+                    logger.error(f"Failed to decode message: {e}")
+                    continue
                 
                 # Log progress
                 if processed_count % 50 == 0:

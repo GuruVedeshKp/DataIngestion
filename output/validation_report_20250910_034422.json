@@ -1,0 +1,21 @@
+{
+  "summary": {
+    "total_records": 0,
+    "valid_records": 0,
+    "invalid_records": 0,
+    "success_rate": "0.00%",
+    "processing_duration": 26.231445,
+    "schema_learned": false
+  },
+  "quality_distribution": {
+    "excellent": 0,
+    "good": 0,
+    "fair": 0,
+    "poor": 0
+  },
+  "schema_summary": null,
+  "validation_errors": [],
+  "data_quality_insights": [
+    "No data processed yet"
+  ]
+}

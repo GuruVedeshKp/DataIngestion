@@ -109,7 +109,7 @@ class DataIngestionPipeline:
                 }
                 
                 # Use only valid records for Kafka
-                records_to_send = [record.dict() for record in good_data]
+                records_to_send = [record for record in good_data]
             else:
                 records_to_send = records
             

@@ -1,0 +1,23 @@
+{
+  "processing_summary": {
+    "total_records": 0,
+    "valid_records": 0,
+    "invalid_records": 0,
+    "success_rate": "0.00%",
+    "processing_duration": "26.23s",
+    "records_per_second": 0.0
+  },
+  "quality_metrics": {
+    "excellent_quality": 0,
+    "good_quality": 0,
+    "fair_quality": 0,
+    "poor_quality": 0,
+    "high_quality_count": 0,
+    "low_quality_count": 0
+  },
+  "data_splits": {
+    "good_data_count": 0,
+    "bad_data_count": 0,
+    "quality_threshold": 0.8
+  }
+}
