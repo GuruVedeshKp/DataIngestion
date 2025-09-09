@@ -1,0 +1,22 @@
+OrderID,CustomerID,EmployeeID,OrderDate,ShippedDate,ShipVia,Freight,ShipName,ShipAddress,ShipCity,ShipRegion,ShipPostalCode,ShipCountry,status
+10248,VINET,5,2025-09-01,2025-09-03,3,32.38,Vins et alcools Chevalier,59 rue de l'Abbaye,Reims,,51100,France,accepted
+10249,TOMSP,6,2025-09-01,2025-09-05,1,11.61,Toms Spezialitäten,Luisenstr. 48,Münster,,44087,Germany,accepted
+10250,HANAR,4,2025-09-02,2025-09-05,2,65.83,Hanari Carnes,Rua do Paço, 67,Rio de Janeiro,RJ,"05454-876,Brazil",accepted
+10256,FRANK,2,2025-09-10,2025-09-12,2,50.5,Frankie's Deli,Main Street 10,Paris,,75001,France,accepted
+10259,MILLER,4,2025-09-03,2025-09-07,2,0.0,Miller Foods,High Street 15,Madrid,,28013,Spain,accepted
+10260,BROWN,5,2025-09-04,2025-09-06,1,25.25,Brown Co.,Sunset Blvd 45,Los Angeles,CA,90001,USA,accepted
+10262,WILSON,2,2025-09-06,2025-09-08,3,15.5,Wilson Foods,King Street 8,Sydney,,2000,Australia,accepted
+10264,TAYLOR,5,2025-09-08,2025-09-10,2,40.0,Taylor's Deli,Oak Avenue 7,Chicago,IL,60601,USA,accepted
+10267,CLARK,6,2025-09-11,2025-09-14,3,60.0,Clark Foods,Maple Lane 30,Oslo,,0150,Norway,accepted
+10268,LEWIS,2,2025-09-12,2025-09-13,1,35.0,Lewis Market,King Street 8,Sydney,,2000,Australia,accepted
+10270,COOK,5,2025-09-14,2025-09-16,1,28.0,Cook Supermarket,Main Avenue 3,Paris,,75002,France,accepted
+10272,MORRIS,4,2025-09-16,2025-09-18,1,22.0,Morris Foods,High Street 17,Madrid,,28014,Spain,accepted
+10274,KING,2,2025-09-18,2025-09-20,1,14.0,King Co.,Market Road 14,London,,E2 7AN,UK,accepted
+10276,LOPEZ,3,2025-09-20,2025-09-22,1,8.0,Lopez Foods,Oak Street 9,Chicago,IL,60602,USA,accepted
+10277,HILL,4,2025-09-21,2025-09-23,2,0.0,Hill Market,Pine Lane 3,Stockholm,,111 23,Sweden,accepted
+10279,ADAMS,6,2025-09-23,2025-09-24,1,20.0,Adams Foods,Queen Street 7,Toronto,ON,M5H 2N3,Canada,accepted
+10281,GONZALEZ,3,2025-09-25,2025-09-27,1,33.0,Gonzalez Co.,Elm Street 31,Berlin,,10120,Germany,accepted
+10283,CARTER,4,2025-09-27,2025-09-29,1,19.0,Carter Foods,High Street 20,Madrid,,28015,Spain,accepted
+10285,PEREZ,2,2025-09-29,2025-10-01,1,17.0,Perez Deli,Pine Lane 11,Stockholm,,111 24,Sweden,accepted
+10286,ROBERTS,3,2025-09-30,2025-10-02,2,21.0,Roberts Market,King Street 13,Oslo,,0171,Norway,accepted
+10289,CAMPBELL,6,2025-10-03,2025-10-05,1,15.0,Campbell Co.,Elm Street 33,Berlin,,10121,Germany,accepted

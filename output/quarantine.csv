@@ -1,0 +1,16 @@
+OrderID,CustomerID,EmployeeID,OrderDate,ShippedDate,ShipVia,Freight,ShipName,ShipAddress,ShipCity,ShipRegion,ShipPostalCode,ShipCountry,status
+10251,CHOPS,5,2025-09-06,2025-09-05,2,22.98,"Chop-suey, Chinese",472 6th Ave,New York,NY,10014,USA,quarantine
+10252,RICSU,9,2025-09-07,2025-09-09,1,-148.33,Richter Supermarkt,Starenweg 5,Genève,,1204,Switzerland,quarantine
+10257,JOHNS,7,2025-09-05,2025-09-08,1,-5.0,John's Supplies,Market Road 7,London,,E1 6AN,UK,quarantine
+10258,SMITH,3,2025-09-02,2025-09-01,3,12.0,Smith Grocery,Elm Street 22,Berlin,,10117,Germany,quarantine
+10261,DAVIS,6,2025-09-05,2025-09-10,2,-20.0,Davis Mart,River Road 3,Amsterdam,,1012,Netherlands,quarantine
+10263,MOORE,1,2025-09-07,2025-09-06,1,10.0,Moore Market,Queen Street 12,Toronto,ON,M5H 2N2,Canada,quarantine
+10266,HARRIS,4,2025-09-10,2025-09-11,2,-12.5,Harris Groceries,Baker Street 5,London,,NW1 6XE,UK,quarantine
+10269,ROBIN,7,2025-09-13,2025-09-12,2,18.0,Robin's Deli,Elm Street 44,Berlin,,10119,Germany,quarantine
+10271,EDWARDS,3,2025-09-15,2025-09-17,2,-7.5,Edwards Market,River Road 5,Amsterdam,,1015,Netherlands,quarantine
+10275,WRIGHT,5,2025-09-19,2025-09-21,2,-30.0,Wright Mart,River Road 12,Amsterdam,,1016,Netherlands,quarantine
+10278,SCOTT,5,2025-09-22,2025-09-21,3,12.0,Scott Deli,King Road 12,Oslo,,0160,Norway,quarantine
+10280,BAKER,2,2025-09-24,2025-09-25,2,-5.0,Baker Market,Oak Street 14,Sydney,,2001,Australia,quarantine
+10284,MITCHELL,6,2025-09-28,2025-09-30,3,-10.0,Mitchell Grocery,Sunset Blvd 50,Los Angeles,CA,90003,USA,quarantine
+10287,TURNER,5,2025-10-01,2025-10-03,1,-40.0,Turner Foods,Queen Street 6,Toronto,ON,M5H 2N4,Canada,quarantine
+10290,PARKER,2,2025-10-04,2025-10-06,3,-25.0,Parker Foods,River Road 9,Amsterdam,,1018,Netherlands,quarantine

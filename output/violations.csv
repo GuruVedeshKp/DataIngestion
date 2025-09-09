@@ -1,0 +1,8 @@
+OrderID,CustomerID,EmployeeID,OrderDate,ShippedDate,ShipVia,Freight,ShipName,ShipAddress,ShipCity,ShipRegion,ShipPostalCode,ShipCountry,status
+10253,WELLI,3,2025-09-08,,2,13.97,Wellington Importadora,Rua do Mercado, 12,São Paulo,SP,"01000-000,Brazil",violation
+10254,,,2025-09-11,2025-09-14,2,3.0,Invalid Customer,,Berlin,,10115,Germany,violation
+10255,ALFKI,1,2025-09-12,2025-09-15,1,,Alfreds Futterkiste,Obere Str. 57,Berlin,,12209,Germany,violation
+10265,ANDER,3,2025-09-09,2025-09-12,1,,Ander Supermarket,Pine Road 21,Stockholm,,111 22,Sweden,violation
+10273,RICE,6,2025-09-17,2025-09-19,3,,Rice Grocery,Sunset Blvd 48,Los Angeles,CA,90002,USA,violation
+10282,NELSON,5,2025-09-26,2025-09-28,2,,Nelson Market,River Road 8,Amsterdam,,1017,Netherlands,violation
+10288,PHILLIPS,4,2025-10-02,2025-10-04,2,,Phillips Market,Oak Street 10,Sydney,,2002,Australia,violation

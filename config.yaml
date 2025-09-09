@@ -1,0 +1,46 @@
+fields:
+  OrderID:
+    dtype: integer
+    nullable: false
+  CustomerID:
+    dtype: string
+    nullable: false
+    regex: '^[A-Z0-9]{5}$'
+  EmployeeID:
+    dtype: integer
+    nullable: false
+  OrderDate:
+    dtype: string
+    nullable: false
+    regex: '^\d{4}-\d{2}-\d{2}$'
+  ShippedDate:
+    dtype: string
+    nullable: true   # optional, so true
+    regex: '^\d{4}-\d{2}-\d{2}$'
+  ShipVia:
+    dtype: integer
+    nullable: false
+  Freight:
+    dtype: float
+    nullable: false
+  ShipName:
+    dtype: string
+    nullable: false
+  ShipAddress:
+    dtype: string
+    nullable: false
+  ShipCity:
+    dtype: string
+    nullable: false
+  ShipRegion:
+    dtype: string
+    nullable: true   # optional field
+  ShipPostalCode:
+    dtype: string
+    nullable: false
+  ShipCountry:
+    dtype: string
+    nullable: false
+
+primary_key: OrderID
+

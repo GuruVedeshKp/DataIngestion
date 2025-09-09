@@ -1,5 +1,44 @@
-Year,Industry_aggregation_NZSIOC,Industry_code_NZSIOC,Industry_name_NZSIOC,Units,Variable_code,Variable_name,Variable_category,Value,Industry_code_ANZSIC06
-2024,Level 1,99999,All industries,Dollars (millions),H01,Total income,Financial performance,979594,"ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
-2024,Level 1,99999,All industries,Dollars (millions),H04,"Sales, government funding, grants and subsidies",Financial performance,838626,"ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
-2024,Level 1,99999,All industries,Dollars (millions),H05,"Interest, dividends and donations",Financial performance,112188,"ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
-2024,Level 1,99999,All industries,Dollars (millions),H07,Non-operating income,Financial performance,28781,"ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+OrderID,CustomerID,EmployeeID,OrderDate,ShippedDate,ShipVia,Freight,ShipName,ShipAddress,ShipCity,ShipRegion,ShipPostalCode,ShipCountry
+10248,VINET,5,2025-09-01,2025-09-03,3,32.38,Vins et alcools Chevalier,59 rue de l'Abbaye,Reims,,51100,France
+10249,TOMSP,6,2025-09-01,2025-09-05,1,11.61,Toms Spezialitäten,Luisenstr. 48,Münster,,44087,Germany
+10250,HANAR,4,2025-09-02,2025-09-05,2,65.83,Hanari Carnes,Rua do Paço, 67,Rio de Janeiro,RJ,"05454-876,Brazil"
+10251,CHOPS,5,2025-09-06,2025-09-05,2,22.98,"Chop-suey, Chinese",472 6th Ave,New York,NY,10014,USA
+10252,RICSU,9,2025-09-07,2025-09-09,1,-148.33,Richter Supermarkt,Starenweg 5,Genève,,1204,Switzerland
+10253,WELLI,3,2025-09-08,,2,13.97,Wellington Importadora,Rua do Mercado, 12,São Paulo,SP,"01000-000,Brazil"
+10254,<NA>,,2025-09-11,2025-09-14,2,3.0,Invalid Customer,,Berlin,,10115,Germany
+10255,ALFKI,1,2025-09-12,2025-09-15,1,,Alfreds Futterkiste,Obere Str. 57,Berlin,,12209,Germany
+10256,FRANK,2,2025-09-10,2025-09-12,2,50.50,"Frankie's Deli",Main Street 10,Paris,,75001,France
+10257,JOHNS,7,2025-09-05,2025-09-08,1,-5.0,John's Supplies,Market Road 7,London,,E1 6AN,UK
+10258,SMITH,3,2025-09-02,2025-09-01,3,12.00,Smith Grocery,Elm Street 22,Berlin,,10117,Germany
+10259,MILLER,4,2025-09-03,2025-09-07,2,0.0,Miller Foods,High Street 15,Madrid,,28013,Spain
+10260,BROWN,5,2025-09-04,2025-09-06,1,25.25,Brown Co.,Sunset Blvd 45,Los Angeles,CA,90001,USA
+10261,DAVIS,6,2025-09-05,2025-09-10,2,-20.0,Davis Mart,River Road 3,Amsterdam,,1012,Netherlands
+10262,WILSON,2,2025-09-06,2025-09-08,3,15.5,Wilson Foods,King Street 8,Sydney,,2000,Australia
+10263,MOORE,1,2025-09-07,2025-09-06,1,10.0,Moore Market,Queen Street 12,Toronto,ON,M5H 2N2,Canada
+10264,TAYLOR,5,2025-09-08,2025-09-10,2,40.0,Taylor's Deli,Oak Avenue 7,Chicago,IL,60601,USA
+10265,ANDER,3,2025-09-09,2025-09-12,1,,Ander Supermarket,Pine Road 21,Stockholm,,111 22,Sweden
+10266,HARRIS,4,2025-09-10,2025-09-11,2,-12.5,Harris Groceries,Baker Street 5,London,,NW1 6XE,UK
+10267,CLARK,6,2025-09-11,2025-09-14,3,60.0,Clark Foods,Maple Lane 30,Oslo,,0150,Norway
+10268,LEWIS,2,2025-09-12,2025-09-13,1,35.0,Lewis Market,King Street 8,Sydney,,2000,Australia
+10269,ROBIN,7,2025-09-13,2025-09-12,2,18.0,Robin's Deli,Elm Street 44,Berlin,,10119,Germany
+10270,COOK,5,2025-09-14,2025-09-16,1,28.0,Cook Supermarket,Main Avenue 3,Paris,,75002,France
+10271,EDWARDS,3,2025-09-15,2025-09-17,2,-7.5,Edwards Market,River Road 5,Amsterdam,,1015,Netherlands
+10272,MORRIS,4,2025-09-16,2025-09-18,1,22.0,Morris Foods,High Street 17,Madrid,,28014,Spain
+10273,RICE,6,2025-09-17,2025-09-19,3,,Rice Grocery,Sunset Blvd 48,Los Angeles,CA,90002,USA
+10274,KING,2,2025-09-18,2025-09-20,1,14.0,King Co.,Market Road 14,London,,E2 7AN,UK
+10275,WRIGHT,5,2025-09-19,2025-09-21,2,-30.0,Wright Mart,River Road 12,Amsterdam,,1016,Netherlands
+10276,LOPEZ,3,2025-09-20,2025-09-22,1,8.0,Lopez Foods,Oak Street 9,Chicago,IL,60602,USA
+10277,HILL,4,2025-09-21,2025-09-23,2,0.0,Hill Market,Pine Lane 3,Stockholm,,111 23,Sweden
+10278,SCOTT,5,2025-09-22,2025-09-21,3,12.0,Scott Deli,King Road 12,Oslo,,0160,Norway
+10279,ADAMS,6,2025-09-23,2025-09-24,1,20.0,Adams Foods,Queen Street 7,Toronto,ON,M5H 2N3,Canada
+10280,BAKER,2,2025-09-24,2025-09-25,2,-5.0,Baker Market,Oak Street 14,Sydney,,2001,Australia
+10281,GONZALEZ,3,2025-09-25,2025-09-27,1,33.0,Gonzalez Co.,Elm Street 31,Berlin,,10120,Germany
+10282,NELSON,5,2025-09-26,2025-09-28,2,,Nelson Market,River Road 8,Amsterdam,,1017,Netherlands
+10283,CARTER,4,2025-09-27,2025-09-29,1,19.0,Carter Foods,High Street 20,Madrid,,28015,Spain
+10284,MITCHELL,6,2025-09-28,2025-09-30,3,-10.0,Mitchell Grocery,Sunset Blvd 50,Los Angeles,CA,90003,USA
+10285,PEREZ,2,2025-09-29,2025-10-01,1,17.0,Perez Deli,Pine Lane 11,Stockholm,,111 24,Sweden
+10286,ROBERTS,3,2025-09-30,2025-10-02,2,21.0,Roberts Market,King Street 13,Oslo,,0171,Norway
+10287,TURNER,5,2025-10-01,2025-10-03,1,-40.0,Turner Foods,Queen Street 6,Toronto,ON,M5H 2N4,Canada
+10288,PHILLIPS,4,2025-10-02,2025-10-04,2,,Phillips Market,Oak Street 10,Sydney,,2002,Australia
+10289,CAMPBELL,6,2025-10-03,2025-10-05,1,15.0,Campbell Co.,Elm Street 33,Berlin,,10121,Germany
+10290,PARKER,2,2025-10-04,2025-10-06,3,-25.0,Parker Foods,River Road 9,Amsterdam,,1018,Netherlands
