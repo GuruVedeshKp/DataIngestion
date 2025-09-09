@@ -1,0 +1,31 @@
+CustomerID,CompanyName,ContactName,ContactTitle,City,Region,PostalCode,Country,Segment,MetroArea
+BOTTM,Bottom-Dollar Markets,Elizabeth Lincoln,Accounting Manager,Tsawassen,BC,T2F 8M4,Canada,Healthcare,TRUE
+COMMI,Comercio Mineiro,Pedro Afonso,Sales Associate,Sao Paulo,SP,05432-043,Brazil,Government,TRUE
+FAMIA,Familia Arquibaldo,Aria Cruz,Marketing Assistant,Sao Paulo,SP,05442-030,Brazil,Corporate,FALSE
+GOURL,Gourmet Lanchonetes,Andre Fonseca,Sales Associate,Campinas,SP,04876-786,Brazil,Hospitality,TRUE
+GREAL,Great Lakes Food Market,Howard Snyder,Marketing Manager,Eugene,OR,97403,USA,Healthcare,FALSE
+GROSR,GROSELLA-Restaurante,Manuel Pereira,Owner,Caracas,DF,1081,Venezuela,Retail,TRUE
+HANAR,Hanari Carnes,Mario Pontes,Accounting Manager,Rio de Janeiro,RJ,05454-876,Brazil,Corporate,TRUE
+HILAA,HILARION-Abastos,Carlos Hernandez,Sales Representative,San Cristobal,Táchira,5022,Venezuela,Healthcare,FALSE
+HUNGC,Hungry Coyote Import Store,Yoshi Latimer,Sales Representative,Elgin,OR,97827,USA,Government,TRUE
+ISLAT,Island Trading,Helen Bennett,Marketing Manager,Cowes,Isle of Wight,PO31 7PJ,UK,Government,TRUE
+LAUGB,Laughing Bacchus Wine Cellars,Yoshi Tannamuri,Marketing Assistant,Vancouver,BC,V3F 2K1,Canada,Educational,FALSE
+LAZYK,Lazy K Kountry Store,John Steel,Marketing Manager,Walla Walla,WA,99362,USA,Retail,FALSE
+LETSS,Let''''s Stop N Shop,Jaime Yorres,Owner,San Francisco,CA,94117,USA,Retail,FALSE
+LILAS,LILA-Supermercado,Carlos Gonzalez,Accounting Manager,Barquisimeto,Lara,3508,Venezuela,Hospitality,TRUE
+LINOD,LINO-Delicateses,Felipe Izquierdo,Owner,I. de Margarita,Nueva Esparta,4980,Venezuela,Government,FALSE
+LONEP,Lonesome Pine Restaurant,Fran Wilson,Sales Manager,Portland,OR,97219,USA,Educational,FALSE
+MEREP,Mere Paillarde,Jean Fresniere,Marketing Assistant,Montreal,Québec,H1J 1C3,Canada,Corporate,FALSE
+OLDWO,Old World Delicatessen,Rene Phillips,Sales Representative,Anchorage,AK,99508,USA,Government,TRUE
+QUEDE,Que Delícia,Bernardo Batista,Accounting Manager,Rio de Janeiro,RJ,02389-673,Brazil,Corporate,FALSE
+QUEEN,Queen Cozinha,Lucia Carvalho,Marketing Assistant,Sao Paulo,SP,05487-020,Brazil,Travel,TRUE
+RATTC,Rattlesnake Canyon Grocery,Paula Wilson,Assistant Sales Representative,Albuquerque,NM,87110,USA,Retail,TRUE
+RICAR,Ricardo Adocicados,Janete Limeira,Assistant Sales Agent,Rio de Janeiro,RJ,02389-890,Brazil,Corporate,FALSE
+SAVEA,Save-a-lot Markets,Jose Pavarotti,Sales Representative,Boise,ID,83720,USA,Retail,FALSE
+SPLIR,Split Rail Beer \& Ale,Art Braunschweiger,Sales Manager,Lander,WY,82520,USA,Hospitality,FALSE
+THEBI,The Big Cheese,Liz Nixon,Marketing Manager,Portland,OR,97201,USA,Educational,TRUE
+THECR,The Cracker Box,Liu Wong,Marketing Assistant,Butte,MT,59801,USA,Hospitality,FALSE
+TRADH,Tradicao Hipermercados,Anabela Domingues,Sales Representative,Sao Paulo,SP,05634-030,Brazil,Corporate,TRUE
+TRAIH,Trail''''s Head Gourmet Provisioners,Helvetius Nagy,Sales Associate,Kirkland,WA,98034,USA,Corporate,FALSE
+WELLI,Wellington Importadora,Paula Parente,Sales Manager,Resende,SP,08737-363,Brazil,Healthcare,FALSE
+WHITC,White Clover Markets,Karl Jablonski,Owner,Seattle,WA,98128,USA,Retail,FALSE
