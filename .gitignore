@@ -1,3 +1,4 @@
 cts/
 __pychache__/
-/*.pyc 
+/*.pyc
+.venv/

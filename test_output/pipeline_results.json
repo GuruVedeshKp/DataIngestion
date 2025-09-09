@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "total_records": 30,
+  "valid_records": 0,
+  "invalid_records": 30,
+  "high_quality_records": 0,
+  "low_quality_records": 30,
+  "success_rate": "0.00%",
+  "report_path": "reports\\data_quality_report_20250910_013250.html",
+  "output_directory": "test_output"
+}
