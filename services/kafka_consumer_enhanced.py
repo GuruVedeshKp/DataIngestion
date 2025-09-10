@@ -62,9 +62,13 @@ class EnhancedKafkaConsumer:
             'heartbeat.interval.ms': 3000
         }
         
+        logger.info(f"Consumer config: group.id={consumer_group}, auto.offset.reset={auto_offset_reset}")
+        
         # Initialize Kafka consumer
         self.consumer = Consumer(consumer_config)
         self.consumer.subscribe([topic])
+        
+        logger.info(f"Subscribed to topic: {topic}")
         
         # Processing state
         self.processed_records = []
@@ -98,20 +102,43 @@ class EnhancedKafkaConsumer:
         
         processed_count = 0
         batch_buffer = []
+        consecutive_empty_polls = 0
+        max_empty_polls = 15  # Reduce to 15 seconds for faster detection
         
         try:
             start_time = time.time()
+            logger.info(f"Starting message consumption. Will stop after {max_empty_polls} consecutive empty polls or {timeout_seconds}s timeout.")
             
             while self.is_running:
                 # Poll for messages
                 msg = self.consumer.poll(timeout=1.0)
                 
                 if msg is None:
+                    consecutive_empty_polls += 1
+                    
+                    # Log progress every 5 empty polls
+                    if consecutive_empty_polls % 5 == 0:
+                        logger.info(f"No messages received. Empty polls: {consecutive_empty_polls}/{max_empty_polls}. Processed so far: {processed_count}")
+                    
+                    # If we've processed some records and now getting empty polls, consider stopping
+                    if consecutive_empty_polls >= max_empty_polls:
+                        if processed_count > 0:
+                            logger.info(f"No new messages after {max_empty_polls} polls. Processed {processed_count} records. Finishing consumption.")
+                            break
+                        else:
+                            logger.warning(f"No messages found in topic after {max_empty_polls} polls. Topic may be empty.")
+                            break
                     continue
+                else:
+                    consecutive_empty_polls = 0  # Reset counter when we get a message
                     
                 if msg.error():
                     if msg.error().code() == KafkaError._PARTITION_EOF:
                         logger.info('End of partition reached')
+                        consecutive_empty_polls += 1
+                        if consecutive_empty_polls >= 5:  # Stop faster on EOF
+                            logger.info("End of partition reached and no more messages. Finishing consumption.")
+                            break
                         continue
                     else:
                         logger.error(f'Consumer error: {msg.error()}')
@@ -119,7 +146,7 @@ class EnhancedKafkaConsumer:
                 
                 # Check timeout
                 if timeout_seconds and (time.time() - start_time) > timeout_seconds:
-                    logger.info(f"Timeout reached ({timeout_seconds}s)")
+                    logger.info(f"Timeout reached ({timeout_seconds}s). Processed {processed_count} records.")
                     break
                 
                 # Deserialize message
