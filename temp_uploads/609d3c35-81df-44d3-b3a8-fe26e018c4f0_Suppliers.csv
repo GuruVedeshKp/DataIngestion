@@ -1,0 +1,30 @@
+SupplierID,CompanyName,ContactName,ContactTitle,City,Region,PostalCode,Country
+1,Exotic Liquids,Charlotte Cooper,Purchasing Manager,London,NULL,EC1 4SD,UK
+2,New Orleans Cajun Delights,Shelley Burke,Order Administrator,New Orleans,LA,70117,USA
+3,Grandma Kelly's Homestead,Regina Murphy,Sales Representative,Ann Arbor,MI,48104,USA
+4,Tokyo Traders,Yoshi Nagase,Marketing Manager,Tokyo,NULL,100,Japan
+5,Cooperativa de Quesos Las Cabras,Antonio del Valle Saavedra ,Export Administrator,Oviedo,Asturias,33007,Spain
+6,Mayumi's,Mayumi Ohno,Marketing Representative,Osaka,NULL,545,Japan
+7,Pavlova,Ltd.,Ian Devling,Marketing Manager,Melbourne,Victoria,3058
+8,Specialty Biscuits,Ltd.,Peter Wilson,Sales Representative,Manchester,NULL,M14 GSD
+9,PB Knackebrod AB,Lars Peterson,Sales Agent,Goteborg,NULL,S-345 67,Sweden 
+10,Refrescos Americanas LTDA,Carlos Diaz,Marketing Manager,Sao Paulo,NULL,5442,Brazil
+11,Heli Subwaren GmbH \& Co. KG,Petra Winkler,Sales Manager,Berlin,NULL,10785,Germany
+12,Plutzer Lebensmittelgrobmarkte AG,Martin Bein,International Marketing Mgr.,Frankfurt,NULL,60439,Germany
+13,Nord-Ost-Fisch Handelsgesellschaft mbH,Sven Petersen,Coordinator Foreign Markets,Cuxhaven,NULL,27478,Germany
+14,Formaggi Fortini s.r.l.,Elio Rossi,Sales Representative,Ravenna,NULL,48100,Italy
+15,Norske Meierier,Beate Vileid,Marketing Manager,Sandvika,NULL,1320,Norway
+16,Bigfoot Breweries,Cheryl Saylor,Regional Account Rep.,Bend,OR,97101,USA
+17,Svensk Sjofoda AB,Michael Björn,Sales Representative,Stockholm,NULL,S-123 45,Sweden
+18,Aux joyeux ecclesiastiques,Guylène Nodier,Sales Manager,Paris,NULL,75004,France
+19,New England Seafood Cannery,Robb Merchant,Wholesale Account Agent,Boston,MA,02134,USA
+20,Leka Trading,Chandra Leka,Owner,Singapore,NULL,0512,Singapore
+21,Lyngbysild,Niels Petersen,Sales Manager,Lyngby,NULL,2800,Denmark
+22,Zaanse Snoepfabriek,Dirk Luchte,Accounting Manager,Zaandam,NULL,9999 ZZ,Netherlands
+23,Karkki Oy,Anne Heikkonen,Product Manager,Lappeenranta,NULL,53120,Finland
+24,G'day,Mate,Wendy Mackenzie,Sales Representative,Sydney,NSW,2042
+25,Ma Maison,Jean-Guy Lauzon,Marketing Manager,Montreal,Quebec,H1J 1C3,Canada
+26,Pasta Buttini s.r.l.,Giovanni Giudici,Order Administrator,Salerno,NULL,84100,Italy
+27,Escargots Nouveaux,Marie Delamare,Sales Manager,Montceau,NULL,71300,France
+28,Gai paturage,Eliane Noz,Sales Representative,Annecy,NULL,74000,France
+29,Forets d'erables,Chantal Goulet,Accounting Manager,Ste-Hyacinthe,Quebec,J2S 7S8,Canada

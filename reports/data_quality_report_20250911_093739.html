@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Quality Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .header { background-color: #f0f0f0; padding: 20px; border-radius: 5px; }
+        .section { margin: 20px 0; }
+        .metric { display: inline-block; margin: 10px; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .error { background-color: #ffe6e6; }
+        .success { background-color: #e6ffe6; }
+        .warning { background-color: #fff3e6; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Data Quality Report</h1>
+        <p>Generated on: 2025-09-11 09:37:39</p>
+    </div>
+    
+    <div class="section">
+        <h2>Executive Summary</h2>
+        
+        <div class="metric success">
+            <h3>Total Records</h3>
+            <p>9</p>
+        </div>
+        <div class="metric warning">
+            <h3>Success Rate</h3>
+            <p>88.89%</p>
+        </div>
+        <div class="metric">
+            <h3>Processing Time</h3>
+            <p>77.78s</p>
+        </div>
+        <div class="metric">
+            <h3>Records/Second</h3>
+            <p>0.12</p>
+        </div>
+        
+    </div>
+    
+    <div class="section">
+        <h2>Quality Distribution</h2>
+        
+        <table>
+            <tr>
+                <th>Quality Level</th>
+                <th>Count</th>
+                <th>Percentage</th>
+            </tr>
+            <tr>
+                <td>Excellent</td>
+                <td>8</td>
+                <td>100.0%</td>
+            </tr>
+            <tr>
+                <td>Good</td>
+                <td>0</td>
+                <td>0.0%</td>
+            </tr>
+            <tr>
+                <td>Fair</td>
+                <td>0</td>
+                <td>0.0%</td>
+            </tr>
+            <tr>
+                <td>Poor</td>
+                <td>0</td>
+                <td>0.0%</td>
+            </tr>
+        </table>
+        
+    </div>
+    
+    <div class="section">
+        <h2>Validation Details</h2>
+        <table><tr><th>Status</th><th>Quality Score</th><th>Errors</th><th>Warnings</th></tr><tr><td>✅ Valid</td><td>1.00</td><td>0</td><td>0</td></tr><tr><td>❌ Invalid</td><td>0.89</td><td>3</td><td>0</td></tr><tr><td>✅ Valid</td><td>1.00</td><td>0</td><td>0</td></tr><tr><td>✅ Valid</td><td>1.00</td><td>0</td><td>0</td></tr><tr><td>✅ Valid</td><td>0.99</td><td>0</td><td>0</td></tr><tr><td>✅ Valid</td><td>0.99</td><td>0</td><td>0</td></tr><tr><td>✅ Valid</td><td>0.99</td><td>0</td><td>0</td></tr><tr><td>✅ Valid</td><td>1.00</td><td>0</td><td>0</td></tr><tr><td>✅ Valid</td><td>0.99</td><td>0</td><td>0</td></tr></table>
+    </div>
+    
+    <div class="section">
+        <h2>Error Analysis</h2>
+        <h3>Common Error Patterns</h3><table><tr><th>Error Type</th><th>Count</th></tr><tr><td>Field 'ReportsTo'</td><td>2</td></tr><tr><td>Field 'BirthDate'</td><td>1</td></tr></table>
+    </div>
+    
+    <div class="section">
+        <h2>Data Quality Insights</h2>
+        <ul><li>Good data quality with acceptable success rate</li><li>Majority of valid records have excellent quality scores</li><li>Strong overall data quality suitable for production use</li><li>Low processing throughput - consider optimization</li><li>Most common validation issue: Field 'ReportsTo'</li><li>Over 50% of errors are related to Field 'ReportsTo' - focus on fixing this issue</li></ul>
+    </div>
+</body>
+</html>
+        

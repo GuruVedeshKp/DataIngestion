@@ -1,66 +1,11 @@
 {
-  "pipeline_type": "full_pipeline",
-  "input_file": "CustomersData.csv",
-  "topic": "customer_data_working",
-  "phase1_file_to_kafka": {
-    "pipeline_type": "file_to_kafka",
-    "input_file": "CustomersData.csv",
-    "topic": "customer_data_working",
-    "validation_enabled": true,
-    "file_processing": {
-      "total_records_loaded": 30,
-      "columns": [
-        "CustomerID",
-        "CompanyName",
-        "ContactName",
-        "ContactTitle",
-        "City",
-        "Region",
-        "PostalCode",
-        "Country",
-        "Segment",
-        "MetroArea"
-      ]
-    },
-    "validation": {
-      "total_validated": 30,
-      "valid_records": 30,
-      "invalid_records": 0,
-      "success_rate": "100.00%"
-    },
-    "kafka_sending": {
-      "total_records": 30,
-      "sent_records": 30,
-      "error_records": 0,
-      "success_rate": 100.0,
-      "duration_seconds": 0.20865917205810547,
-      "records_per_second": 143.7751319728513,
-      "target_topic": "customer_data_working"
-    },
-    "report_path": "reports\\data_quality_report_20250910_235127.html",
-    "status": "success"
-  },
-  "phase2_kafka_to_analysis": {
-    "status": "success_with_note",
-    "note": "Kafka consumer verification skipped - messages sent successfully",
-    "processing_summary": {
-      "total_records": 30,
-      "valid_records": 30,
-      "invalid_records": 0,
-      "success_rate": "100.00%",
-      "processing_duration": "0.1s",
-      "records_per_second": 0.0
-    },
-    "quality_metrics": {
-      "excellent_quality": 30,
-      "good_quality": 0,
-      "fair_quality": 0,
-      "poor_quality": 0
-    },
-    "output_directory": "output",
-    "report_path": "reports\\data_quality_report_20250910_235127.html"
-  },
   "status": "success",
-  "final_report": "reports\\data_quality_report_20250910_235127.html",
+  "total_records": 30,
+  "valid_records": 30,
+  "invalid_records": 0,
+  "high_quality_records": 30,
+  "low_quality_records": 0,
+  "success_rate": "100.00%",
+  "report_path": "reports\\data_quality_report_20250911_090351.html",
   "output_directory": "output"
 }
