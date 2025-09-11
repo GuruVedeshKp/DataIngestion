@@ -1,4 +1,56 @@
+<<<<<<< HEAD
+# Python and virtual environments
+__pycache__/
+*.pyc
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+
+# Ignore hackathon/dependency folder
+ctshackathon/
+
+# Archives and packages
+*.tar
+*.tar.*
+*.jar
+*.exe
+*.msi
+*.deb
+*.zip
+*.tgz
+*.log
+*.log.*
+*.sig
+
+# Dependency directories
+node_modules/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Build directories
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Directories
+pkg/
+src/
+temp_uploads/
+
+=======
 cts/
 __pychache__/
 /*.pyc
 .venv/
+>>>>>>> 1bed1278444f350b5c1b4fc9caba596cffcce4e5
